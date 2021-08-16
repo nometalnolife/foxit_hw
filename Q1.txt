@@ -1,0 +1,7 @@
+I didn't see a column named 'Subtype', so I just used the answer below.
+
+
+SELECT Document.Auth, Document.Title, Content.content
+FROM Document
+LEFT JOIN Content
+ON Document.DocumentId  = Content.DocumentId  
